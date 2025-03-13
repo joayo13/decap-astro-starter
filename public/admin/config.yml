@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "homepage"
+    label: "Homepage"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "index"
+        label: "Homepage"
+        file: "src/content/homepage.yml"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Paragraph", name: "paragraph", widget: "text" }
